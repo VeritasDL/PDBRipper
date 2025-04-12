@@ -20,8 +20,8 @@ jobs:
 
       - name: Set up environment variables
         env:
-          VSVARS_PATH: "C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\bin\\vcvars32.bat"
-          QMAKE_PATH: "C:\\Qt5.6.3\\5.6.3\\msvc2013\\bin\\qmake.exe"
+          VSVARS_PATH: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\Preview\\VC\\Auxiliary\\Build\\vcvars32.bat"
+          QMAKE_PATH: "C:\\Qt\\6.8.2\\msvc2022_64\\qmake.exe"
           SEVENZIP_PATH: "C:\\Program Files\\7-Zip\\7z.exe"
         run: echo Environment variables are set.
 
@@ -33,6 +33,6 @@ jobs:
       - name: Build Win32 version
         run: build_win32.bat
         env:
-          VSVARS_PATH: "C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\bin\\vcvars32.bat"
-          QMAKE_PATH: "C:\\Qt5.6.3\\5.6.3\\msvc2013\\bin\\qmake.exe"
+          VSVARS_PATH: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\Preview\\VC\\Auxiliary\\Build\\vcvars32.bat"
+          QMAKE_PATH: "C:\\Qt\\6.8.2\\msvc2022_64\\bin\\qmake.exe"
           SEVENZIP_PATH: "C:\\Program Files\\7-Zip\\7z.exe"

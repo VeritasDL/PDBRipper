@@ -1,22 +1,29 @@
+QT += core gui widgets
+
+CONFIG += c++17
+
+TEMPLATE = app
+TARGET = pdbripper
+
 TRANSLATIONS = \
-        translation/pdbripper_ar.ts \
-        translation/pdbripper_de.ts \
-        translation/pdbripper_es.ts \
-        translation/pdbripper_fr.ts \
-        translation/pdbripper_he.ts \
-        translation/pdbripper_id.ts \
-        translation/pdbripper_it.ts \
-        translation/pdbripper_ja.ts \
-        translation/pdbripper_ko.ts \
-        translation/pdbripper_pl.ts \
-        translation/pdbripper_pt_BR.ts \
-        translation/pdbripper_pt_PT.ts \
-        translation/pdbripper_ru.ts \
-        translation/pdbripper_tr.ts\
-        translation/pdbripper_uk.ts\
-        translation/pdbripper_vi.ts \
-        translation/pdbripper_zh.ts \
-        translation/pdbripper_zh_TW.ts
+    translation/pdbripper_ar.ts \
+    translation/pdbripper_de.ts \
+    translation/pdbripper_es.ts \
+    translation/pdbripper_fr.ts \
+    translation/pdbripper_he.ts \
+    translation/pdbripper_id.ts \
+    translation/pdbripper_it.ts \
+    translation/pdbripper_ja.ts \
+    translation/pdbripper_ko.ts \
+    translation/pdbripper_pl.ts \
+    translation/pdbripper_pt_BR.ts \
+    translation/pdbripper_pt_PT.ts \
+    translation/pdbripper_ru.ts \
+    translation/pdbripper_tr.ts \
+    translation/pdbripper_uk.ts \
+    translation/pdbripper_vi.ts \
+    translation/pdbripper_zh.ts \
+    translation/pdbripper_zh_TW.ts
 
 FORMS += \
     ../XOptions/xoptionswidget.ui \
@@ -48,4 +55,10 @@ SOURCES += \
     ../qwinpdb.cpp \
     ../winloader_source/winloader.cpp
 
+INCLUDEPATH += ../msdia ../XOptions ../XShortcuts ../console_source ../winloader_source
 
+RESOURCES += resources.qrc
+
+RC_ICONS = ../icons/main.ico
+
+include(../build.pri)

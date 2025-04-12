@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/PDBRipper/FileContentIndex/aee5799f-1e7c-4798-a91f-54182eb7fc8e.vsidx
+/.vs/cmake.db
+/.vs/CMakeWorkspaceSettings.json
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/CodeChunks.db
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/CodeChunks.db-shm
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/CodeChunks.db-wal
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/SemanticSymbols.db
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/SemanticSymbols.db-shm
+/.vs/PDBRipper/CopilotIndices/17.14.90.56529/SemanticSymbols.db-wal
+/.vs/PDBRipper/FileContentIndex/728e5f43-edea-4817-979e-bf00bc1c511e.vsidx
+/.vs/PDBRipper/v17/.wsuo
+/.vs/PDBRipper/v17/DocumentLayout.backup.json
+/.vs/PDBRipper/v17/DocumentLayout.json
+/.vs/PDBRipper/v17/Preview/Browse.VC.db
+/.vs/PDBRipper/v17/Preview/Browse.VC.db-shm
+/.vs/PDBRipper/v17/Preview/Browse.VC.db-wal
+/.vs/PDBRipper/v17/Preview/Browse.VC.opendb
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/slnx.sqlite-journal
+/.vs/tasks.vs.json
+/.vs/VSWorkspaceState.json
+/.vs/PDBRipper/FileContentIndex/9e3a5f3d-4f6e-4f14-8b0d-b5d11ecf8099.vsidx

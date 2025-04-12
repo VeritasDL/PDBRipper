@@ -1,11 +1,12 @@
-QT += core gui
+QT += core gui widgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+CONFIG += c++17
+CONFIG -= app_bundle
 
-TARGET = pdbripper
 TEMPLATE = app
+TARGET = pdbripper
 
-SOURCES +=\
+SOURCES += \
     ../qwinpdb.cpp \
     ../pdbprocess.cpp \
     dialogabout.cpp \
@@ -13,7 +14,8 @@ SOURCES +=\
     dialogoptions.cpp \
     dialogprocess.cpp \
     guimainwindow.cpp \
-    main_gui.cpp
+    main_gui.cpp \
+    ../msdia/diaCreate.cpp
 
 HEADERS += \
     ../global.h \
@@ -33,13 +35,14 @@ FORMS += \
     dialogprocess.ui \
     guimainwindow.ui
 
-INCLUDEPATH += ../msdia
-SOURCES += ../msdia/diaCreate.cpp
+RESOURCES += \
+    resources.qrc
 
 RC_ICONS = ../icons/main.ico
 
-include(../build.pri)
+INCLUDEPATH += ../msdia
 
+# Submodules
 !contains(XCONFIG, xoptionswidget) {
     XCONFIG += xoptionswidget
     include(../XOptions/xoptionswidget.pri)
@@ -55,9 +58,4 @@ include(../build.pri)
     include(../XAboutWidget/xaboutwidget.pri)
 }
 
-RESOURCES += \
-    resources.qrc
-
-DISTFILES += \
-    ../changelog.txt \
-    ../release_version.txt
+include(../build.pri)
